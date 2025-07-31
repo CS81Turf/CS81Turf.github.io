@@ -1,7 +1,7 @@
 body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            margin: 0;
+            margin: 10px;
             padding: 0;
             color: #333;
             background-color: #f4f4f4;
@@ -66,19 +66,24 @@ body {
         }
 
         .projects {
-            display: grid;  
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 20px;  
+            display: flex;  
+            flex-direction: row;
+            gap: 1rem;
+            padding: 10px;
+            margin: 0;
+            list-style: none;
+            flex-wrap: none;  
           }
 
-          .link-btn {
-            background-color: #02254b;
-            color: white;
-            border: none;
-            padding: 5px 15px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-            margin-left: 20px;
-            margin-bottom: 10px;
-          }
+        .projects li {
+            flex: 1 1 200px;
+            box-sizing: border-box;
+            background: #f8f9fa;
+            padding: 10px;
+            border: 2px solid #007bff;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+      
+
+        }

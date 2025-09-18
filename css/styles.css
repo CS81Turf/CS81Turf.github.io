@@ -149,3 +149,20 @@ h2 {
   text-align: center;
   transition: transform 0.2s ease;
 }
+
+    @media (min-width: 600px) {
+        .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: hotpink;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .container {
+        background-color: aquamarine;
+        }
+    }
+        
